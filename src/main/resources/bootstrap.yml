@@ -1,0 +1,19 @@
+# spring applicaton name should be the service name
+# to be registered in the eureka discovery server
+spring:
+  application:
+    name: eureka-service
+# configuratin for spring cloud config client  
+  cloud:
+    config:
+      uri: http://localhost:8888   
+# configuration for eureka discovery server
+eureka:
+  instance:
+    hostname: localhost
+  client:  # it is the server, not the client, so leave it blank
+    registerWithEureka: false
+    fetchRegistry: false
+# other configuration
+server:
+  port: 1111   # HTTP (Tomcat) port
