@@ -19,7 +19,7 @@ public class EurekaServerApplication {
 @RestController
 class DefaultController {
 	
-	@Value("${message:default message}")
+	@Value("${message:default eureka server}")
 	private String message;
 	
 	@GetMapping("/message")
